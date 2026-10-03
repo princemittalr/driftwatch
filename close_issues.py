@@ -12,7 +12,7 @@ headers = {
 
 repo = os.getenv("GITHUB_REPO")
 
-for issue_num in [1, 2]:
+for issue_num in [1, 2, 3]:
     r = requests.patch(
         f"https://api.github.com/repos/{repo}/issues/{issue_num}",
         headers=headers,
